@@ -1,0 +1,515 @@
+header {
+    background-color: red;
+    padding: 30px 0;
+    font-family: verdana;
+    border-bottom: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    padding: 30px 0;
+    font-family: Verdana, sans-serif;
+    border-bottom: none;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(10, 10, 0, 0.5); 
+}
+.c_titulo{
+    color: yellow;
+    text-align: center;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+.container {
+    padding-top: 500px;
+    color: black; 
+    font-style: normal;
+}
+.ca.text:active {
+    text-decoration:none;
+}
+
+.logo-img {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 0px solid #ccc; 
+}
+
+.logo-img:hover {
+    border-color: #ff0000;
+}
+
+.text {
+    text-decoration: none;
+    transition: color 0.5s;
+    margin-right: 20px;
+    color: yellow;
+    font-family: verdana;
+    font-size: 18px;
+    color: white;
+    font-weight: bold; 
+}
+.text:hover {
+    text-decoration:none;
+    color: red;
+}
+
+/* Estilos para el formulario de búsqueda */
+
+.c-form {
+    border-radius: 5px;
+    align-items: center;
+}
+
+.c-form-search {
+    border-radius: 50px;
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.btn-search {
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn-search:hover {
+    background-color: white;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.btn-logueo {
+    padding: 8px 14px;
+    background-color: #ffff00; 
+    color: #333; 
+    border: 1px solid white; 
+    cursor: pointer;
+    border-radius: 100px;
+    transition: background-color 0.5s ease, color 0.5s, border-color 0.5s; 
+    text-decoration: none;
+}
+
+.btn-logueo:hover {
+    background-color: white;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(5, 0, 0, 5);
+}
+.text-inicio {
+    font-family: Barlow, sans-serif;
+    font-size: 16px; 
+    font-weight: bold; 
+    text-decoration: none;
+    color: #333; 
+}
+
+.text-inicio:hover {
+    color: #666;
+}
+
+.btn-carrito {
+    position: relative;
+    padding: 8px 16px; 
+    font-size: 18px;
+    color: #333;
+    background-color: #ffff00; 
+    border: 2px solid white;
+    border-radius: 50%; 
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-carrito:hover {
+    background-color: white; 
+    border-color: black; 
+    color: black; 
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+}
+
+.btn-carrito .contador {
+    position: absolute;
+    top: -5px;
+    right: -0px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/*--------------------------------------menu desplegable de categorias----------------------------------------*/
+.nav-menu {
+    border-radius: 5px;
+    background-color: rgba(260, 260, 255, 0.8); 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-width: 300px;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    margin-top: 10px;
+    max-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: background-color 0.5s ease; 
+    display: flex;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu li {
+    text-align: justify-all;
+    margin-bottom: auto;
+}
+
+.nav-menu a {
+    color: black; 
+    text-decoration: none;  
+    display: block;  
+    padding: 10px;
+    transition: background-color 0.3s ease; 
+    font-family: Barlow, sans-serif;
+    font-size: 15px;
+}
+
+.nav-menu a:hover {
+    background-color: white;  
+    border-radius: 5px; 
+}
+
+.menu-toggle {
+    display: none; 
+}
+
+.btn_nadvar {
+    background-color: #ffff00;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border-color: white;
+}
+
+.btn_nadvar:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+}
+
+/*------------------------------------------------------------------------------*/
+/*
+.c-select {
+    width: 165px;  Ancho del select 
+    padding: 10px;  Espaciado interior 
+    font-size: 15px;  Tamaño de fuente 
+    font-family: Barlow, sans-serif;
+    font-weight: bolder; 
+    border: 1px solid #ced4da;  Borde 
+    border-radius: 50px;  Bordes redondeados 
+    background-color: #ffff00;  Color de fondo 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: dialog;
+    cursor: pointer;
+    text-align: center;
+    outline: none;  Quita el contorno al enfocar 
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+}
+
+.c-select::after {
+    content: '\25BC';  Triángulo para indicar desplegable 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+ Estilos para opciones hover y seleccionada 
+.c-select option:hover,
+.c-select option:checked {
+    background-color: #f2f2f2;  Color de fondo al pasar el cursor o seleccionar 
+}*/
+
+/* Estilos para el cuadro de opciones */
+/*.c-select option {
+    padding: 10px;  Espaciado interior de las opciones 
+    font-size: 15px;  Tamaño de fuente de las opciones 
+    font-family: Barlow, sans-serif;  Fuente de las opciones 
+    font-weight: bold;  Peso de la fuente de las opciones 
+    text-align: center;  Alineación del texto dentro de las opciones 
+    background-color: #ffff00;  Color de fondo de las opciones 
+    color: #000000;  Color de texto de las opciones 
+}
+
+ Estilos adicionales para el cuadro de opciones al desplegarse 
+.c-select:focus {
+    border-color: #66afe9;  Color del borde al enfocar 
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.5);  Sombra al enfocar 
+}
+
+ Estilos adicionales para opciones al desplegarse 
+.c-select:focus option {
+    background-color: #e6e6e6;  Color de fondo al enfocar las opciones 
+    color: #000000;  Color de texto al enfocar las opciones 
+}*/
+/* Estilos generales del navbar */
+/* Estilos generales del navbar boton */
+
+/*
+.navbar {
+    overflow: hidden;
+    background-color: #ffff00;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+}
+
+
+.dropbtn {
+    position: unset;
+    font-size: 16px;
+    border: none;
+    color: #000;
+    padding: 2px 19px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+}
+.dropbtn .dropdown-content{
+    padding: 10px 18px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed; 
+    background-color: rgba(260, 260, 255, 0.8); 
+    min-width: 28px;
+    box-shadow: 0px 8px 16px 0px rgba(0.5,0,0,0.5);
+    z-index: 100;
+    border-radius: 5px;
+}
+.dropdown-content .btn_inic{
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 18px;
+    text-decoration: none; 
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+.dropdown-content a i {
+    //font-family: Barlow, sans-serif;
+    font-size: 20px; 
+    margin-right: 1px;
+    color: black;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}/*
+/*-----prueba------*/
+.navbar {
+    background-color: #ffff00;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+    position: relative;
+    z-index: 10;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    color: #000;
+    padding: 2px 19px;
+    background-color: inherit;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 135%;
+    left: 0;
+    background-color: rgba(260, 260, 255, 0.8);
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0.5,0,0,0.5);
+    z-index: 9999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.dropdown-content .btn_inic {
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.dropdown-content a i {
+    
+    margin-right: 1px;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*-----------------*/
+
+/*-----------------------------------------------------------------------------*/
+.nav-menu a:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+.a.hover{
+    text-decoration: none;
+}
+.sub-menu {
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+}
+
+.nav-item {
+    position: relative;
+}
+
+[data-toggle="submenu"]:hover + .sub-menu,
+.sub-menu:hover {
+    display: block;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.sub-menu {
+    display: none;
+}
+
+[data-toggle="submenu"]:focus + .sub-menu,
+[data-toggle="submenu"]:hover + .sub-menu {
+    display: block;
+}
+
+/*--------------carrito-desplegable---------------*/
+.contenedor-carrito {
+    position: relative;
+    display: inline-block;
+}
+
+.carrito-desplegable {
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateX(200px);
+}
+
+.carrito-desplegable.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(-100%);
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.producto img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.producto span {
+    margin-right: 10px;
+}
+/*------btn_copmpra--------*/
+
+.btn_compra {
+/*    display: inline-flex;*/
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 60px 10px 60px;
+}
+
+.btn_compra:hover {
+    background-color: #66ff66; 
+    box-shadow: 0 5px 10px rgba(0.5, 0, 0, 0.5); 
+}
+
+.btn_compra:active {
+    background-color: #66cc00;
+    color: yellow;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.btn_compra:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
+}
+
+.btn_compra .btn_text {
+    text-decoration: none;
+    color: white;
+}

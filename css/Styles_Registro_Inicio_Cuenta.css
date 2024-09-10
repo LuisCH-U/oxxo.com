@@ -1,0 +1,256 @@
+/* Estilos específicos para el formulario de registro */
+.c-body-cuenta{
+    background-color: #f6f5fb;
+}
+.c-body-regi {
+    margin: 100px auto;
+    max-width: 100%; 
+}
+.card-body-regi {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ced4da;
+    border-radius: 10px; 
+    box-shadow: 10px 5px 10px rgba(0.5, 0, 0, 0.5); 
+    max-height: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+/*-----------------------General-----------------------------*/
+.card-cuenta {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.c-text-sub {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #464646;
+}
+
+.c-text-titu{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: red;
+    font-family: Barlow, sans-serif;
+    font-weight: bold;
+}
+
+.separator {
+    height: 5px;
+    width: 100%;
+    background-color: #ccc; 
+    margin: 20px 0; 
+}
+
+.c-titulo {
+    margin-top: 40px;
+    font-weight: bold; 
+    text-transform: none;
+    font-family: Barlow, sans-serif; 
+    font-size: 35px; 
+    margin-bottom: 40px;
+    display: block;
+}
+
+.c-label {
+    display: contents;
+    text-align: left;
+    font-weight: normal; 
+    font-size: 20px; 
+    margin-bottom: 500px;
+}
+
+.c-imput {
+    margin-bottom: 20px;
+    width: 80%; 
+    max-width: 500px; 
+    padding: 12px; 
+    border: 1px solid #ced4da; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+    transition: border-color 0.5s ease-in-out;
+}
+/* Cambia el color de fondo al pasar el cursor sobre el input */
+.c-imput:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.btn-regi {
+    width: 50%;
+    padding: 15px;
+    border: none; 
+    border-radius: 100px;
+    background-color: #0c63e4; 
+    color: #fff; 
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.btn-regi:hover {
+    background-color: #cc0000; 
+}
+
+/*------------------------Login-------------------------------*/
+
+.c-body-log {
+    margin: 100px auto;
+    max-width: 100%; 
+    margin-bottom: 20px;
+}
+.card-body-log {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ced4da; 
+    border-radius: 10px; 
+    box-shadow: 10px 5px 10px rgba(0.5, 0, 0, 0.5); 
+    max-height: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+.btn-login {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #0c63e4;
+    color: #fff; 
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.btn-login:hover {
+    background-color: #ff3300;
+}
+.c-icon {
+    margin-bottom: 30px;
+    margin-top: 0;
+    display: flex;
+    border-radius: 100px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.c-icon a {
+    text-decoration: none;
+    color: #ff0000; 
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+}
+
+.c-icon a:hover {
+    color: #cc0000; 
+}
+
+/* Estilos específicos para el formulario de registro */
+/*.c-body-cuenta {
+    background-color: #f6f5fb;
+}
+
+.c-body-regi {
+    margin: 50px auto; 
+    max-width: 90%; 
+}
+
+.card-body-regi {
+    max-width: 90%;
+    margin: 0 auto;
+}*/
+
+/* General */
+/*.card-cuenta {
+    margin-top: 50px; 
+}
+
+
+.c-label {
+    font-size: 16px; 
+}
+
+.c-imput {
+    width: 100%;
+}
+.btn-regi, .btn-login {
+    width: 80%;
+}
+.c-icon {
+    margin-top: 20px; 
+}
+.c-icon a {
+    margin: 0 5px; 
+}*/
+
+@media (max-width: 768px) {
+    .c-body-regi,
+    .card-body-regi,
+    .card-cuenta {
+        margin-top: 30px; 
+    }
+    .c-titulo {
+        font-size: 25px;
+    }
+    .c-label {
+        font-size: 14px;
+    }
+    .c-imput {
+        width: 100%;
+    }
+    .btn-regi, .btn-login {
+        width: 100%; 
+    }
+}
+/*-----------------Perfil------------------*/
+.card-cuenta-perfil{
+    margin-top: 150px;
+}
+.card-body-perfil {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ced4da; 
+    border-radius: 10px; 
+    box-shadow: 5px 10px 15px 10px rgba(0.5, 0.5, 0.5, 0.5); 
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.c_campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.c_campo input {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.c_campo input:first-child {
+    margin-left: 0;
+}
+
+.c_campo input:last-child {
+    margin-right: 0;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #ced4da;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,298 @@
+/*----------------------Cuerpo---------------------*/
+.c-body {
+    margin: 70px auto;
+    max-width: 1500px; 
+}
+.c-admin {
+    margin: 70px auto;
+    margin-top: 100px;
+    max-width: 50%; 
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0;
+}
+
+/*---------------------------Adic-----------------------*/
+.zoom-img {
+    transition: transform 0.5s;
+    transition-delay: unset;
+}
+.zoom-img:hover {
+    transform: scale(1.0);
+}
+/*----------------------texto-hader---------------------*/
+.label_1{
+    text-align: center;
+    text-justify: initial;
+    color: black;
+    font-family: verdana;
+}
+
+.border-0{
+    border:white
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: border 0.5s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    border: 0px solid #007bff;
+}
+
+.card_marc {
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0;
+    overflow: auto;
+    flex-direction: column;
+}
+.card1 .h5{
+    font-family: cursive;
+}
+
+/*------------------card1--------------------------*/
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card1 {
+    height: 400px;
+    width: 650px; 
+    margin-bottom:30px; 
+}
+.card1 .card {
+    padding: 4px 0px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: transform 0.3s ease; 
+    display: inline-block;
+}
+.card1 .card:hover {
+    transform: scale(1.05); 
+}
+/*--para la imagen modifique aqui--*/
+.card1 .card-img-top {
+/*    padding: 15px 35px;*/
+    object-fit: cover;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    margin: 5px 0px 0px 45px;
+    width: 150px;
+    height: 150px;
+}
+.card-body {
+    padding: 50px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px; 
+    margin-bottom: 10px;  
+    margin-top: 0; 
+}
+.card1 .card-body {
+    padding: 15px;
+}
+.card1 .card-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card1 .card-text {
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card1 card-text .limited-text {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.card1 .btn_add {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px 70px;
+    transition: background-color 0.5s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.card1 .btn_add:hover {
+    transform: scale(1.05);
+    background-color: #66ff66;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+}
+.card1 .btn {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px 25px;
+    transition: background-color 0.5s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card1 .btn:hover {
+    transform: scale(1.05);
+    background-color: #66ff66;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+}
+/*-------------------------card2---------------------------*/
+
+.card2 .card-img-top {
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card2 .card {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.card2 .card:hover {
+    transform: scale(1.05);
+}
+.card2 .btn:hover {
+    background-color: yellowgreen;
+}
+.card2 .btn {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 25px;
+    transition: background-color 0.3s;
+}
+
+/*-----------------card_product-----------------------*/
+.card_product {
+    border: 10px; 
+    margin: 5px;
+    border: 5px ;
+    padding: 0px;
+    display: inline-block;
+    width: 200px; 
+    height: 425px;
+}
+.card_product img {
+    max-width: 100%;
+}
+.card_product .card-body1 {
+    padding: 20px;
+}
+.card_product .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card_product .card-text {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.card_product .btn {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 25px;
+    transition: background-color 0.3s;
+}
+.card_product .btn:hover {
+    background-color: yellowgreen;
+}
+.card_product .card_p:hover {
+    transform: scale(1.05);
+}
+.card_product .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+.card_product .card_p {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+/*---------------------------formularioProducto---------------------*/
+.c-form-add .c-form-text {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    padding: 12px;
+    box-shadow: 10px 0px 10px 0px rgba(0,1,0,0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+c-form-add .c-form-text:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.c-form-add .btn-agregar {
+    background-color: #ffc107;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.c-form-add .btn-agregar:hover {
+    background-color: #c82333;
+}
+.c-space {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+/*---------------------------------------------------------------------------*/
+/*----categoria---*/
+.row .promo{
+    margin-left:10px;
+}
+.promo .card-img-top{
+    width: 250px;
+    position: initial;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.c_category{
+    margin-top: 10%;
+    display: block;
+}
+/*categoria de prodcutos*/
+.c_category_pod {
+    margin-top: 5%;
+}
+/*-carrito-*/
+.c_carrito_prod {
+    margin-top: 4.5%;
+}
