@@ -1,6 +1,7 @@
+/*--Cambio css de pagging para la vista imagen completa--*/
 .carousel-item img {
     width: 100%;
-    padding: 100px auto;
+    padding: 20px 0 0 0;
     height: auto;
     max-height: 100%; /*700ppx*/
     object-fit: cover;

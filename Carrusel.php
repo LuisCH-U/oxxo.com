@@ -5,10 +5,19 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item ">
+         <div class="carousel-item active">
+             <img class="d-block w-100" src="img/4947a60c8ea63693acac522b0d40405f.png" loading="lazy">
+        </div>
+         <div class="carousel-item">
+             <img class="d-block w-100" src="img/9a8ed8244a8264e2e23706c33c172966.png" loading="lazy">
+        </div>
+         <div class="carousel-item">
+             <img class="d-block w-100" src="img/c52bbe86a7c62357fdc8bdd91d3e6e14.png" loading="lazy">
+        </div>
+        <div class="carousel-item">
             <img class="d-block w-100" src="img/ppromocion_4.png" loading="lazy">
         </div>
-        <div class="carousel-item active">
+        <div class="carousel-item">
             <img class="d-block w-100" src="img/Promocion_1.png" loading="lazy">
         </div>
         <div class="carousel-item">
