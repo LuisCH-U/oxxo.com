@@ -14,7 +14,7 @@
             <div class="c_category_pod c-body">
                 <div class="row">
                     <!--                Los mismo aqui se paso al controlador.-->
-                    <h4 class="label_1">Descubre increíbles precios en OXXO</h4>
+                    <h4 class="label_1">Descubre increíbles precios en OXXO - <?php echo htmlspecialchars($_GET['CATEGORY']); ?></h4>
                     <?php include_once ('./Controller/Productos_de_Categoria.php'); ?>
                 </div>
             </div>

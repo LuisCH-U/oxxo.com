@@ -154,9 +154,9 @@ header {
     max-width: 300px;
     width: 100%;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 10px 0 5px 20px;
     margin-top: 10px;
-    max-width: 100%;
+    max-width: 150%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     transition: background-color 0.5s ease; 
     display: flex;
@@ -168,15 +168,15 @@ header {
 
 .nav-menu li {
     text-align: justify-all;
-    margin-bottom: auto;
+    margin-bottom: 1px;
 }
 
 .nav-menu a {
     color: black; 
     text-decoration: none;  
     display: block;  
-    padding: 10px;
-    transition: background-color 0.3s ease; 
+    padding: 6px;
+    transition: background-color 0.9s ease; 
     font-family: Barlow, sans-serif;
     font-size: 15px;
 }

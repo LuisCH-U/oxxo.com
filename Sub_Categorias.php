@@ -21,18 +21,17 @@ try {
                 }
                 $Categoria = $row['CATEGORIA'];
                 echo '<li class="nav-item">';
-                echo '<a href="Categoria_Producto.php?ID_CATEGORIA='. htmlspecialchars($row['ID_CATEGORIA']) . '"class="text submenu" data-toggle="submenu" aria-expanded="false" style="color:red">' . htmlspecialchars($Categoria) . '</a>';
+                echo '<a href="Categoria_Producto.php?ID_CATEGORIA='. htmlspecialchars($row['ID_CATEGORIA']) . '&CATEGORY=' . urlencode($row['CATEGORIA']) . '"class="text submenu" data-toggle="submenu" aria-expanded="false" style="color:red">' . htmlspecialchars($Categoria) . '</a>';
                 echo '<ul class="sub-menu">';
             }
             echo '<li class="nav-item">';
-            echo '<a class="text submenu" href="Categoria_Producto.php?PRODUCTO=' . substr(htmlspecialchars($row['PRODUCTO']), 0, 3) . '">' . htmlspecialchars($row['PRODUCTO']) . '</a>';
+            echo '<a class="text submenu" href="Categoria_Producto.php?PRODUCTO=' . substr(htmlspecialchars($row['PRODUCTO']), 0, 3) . '&CATEGORY=' . urlencode($row['CATEGORIA']) . '">' . htmlspecialchars($row['PRODUCTO']) . '</a>';
             echo '</li>';
         }
         echo "</ul></li>";
     } else {
         echo '<a href="#" class="text submenu" data-toggle="submenu" aria-expanded="false">Categorias</a>';
     }
-    
     $conn = null;
     
 } catch (PDOException $e) {
