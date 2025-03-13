@@ -19,7 +19,7 @@ try {
                             echo '<div class="card-body">';
                                 echo '<h6 class="card-title">' . htmlspecialchars($row['PRODUCTO']) . '</h6>';
                                 echo '<p class="card-text limited-text text-center">' . htmlspecialchars($row['DESCRIPCION']) . '</p>';
-                            echo '<h6 class="card-text text-center">' . 'S/' . htmlspecialchars($row['PRECIO']) . '</h6>';
+                            echo '<h6 class="card-text text-center">' . 'S/' . substr(htmlspecialchars($row['PRECIO']), 0, 5) . '</h6>';
                         echo '</div>';
                     echo '</div>';
                 echo '</div>';

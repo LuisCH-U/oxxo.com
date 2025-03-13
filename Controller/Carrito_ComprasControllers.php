@@ -34,7 +34,7 @@ try {
 //            echo '            <input type="number" value="1" min="1">';
 //            echo '            <button class="maxi">+</button>';
 //            echo '        </div>';
-            echo '        <span class="item-price">' . 'S/' . htmlspecialchars($row['PRECIO']) . '</span>';
+            echo '        <span class="item-price">' . 'S/' . substr(htmlspecialchars($row['PRECIO']), 0, 4) . '</span>';
             echo '        <span class="c_cantidad">' . htmlspecialchars($row['CANTIDAD']) . ' Un.' . '</span>';
             echo '        <a class="btn" href="Controller/Eliminar_ProductoControllers.php?ID_PRODUCTOS_VENDIDOS=' . htmlspecialchars($row['ID_PRODUCTOS_VENDIDOS']) . '" >Eliminar</a>';
             echo '    </div>';
@@ -43,7 +43,7 @@ try {
         echo '</div>';
         echo '<div class="cart-total">';
         echo'<span>Total:</span>';
-        echo'<span class="c_precio">' . 'S/' . htmlspecialchars($row['TOTAL']) . '</span>';
+        echo'<span class="c_precio">' . 'S/' . substr(htmlspecialchars($row['TOTAL']), 0, 5) . '</span>';
         echo '</div>';
         
         $_SESSION['ID_VENTA'] = $row['ID_VENTA'];

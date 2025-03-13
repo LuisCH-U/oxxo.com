@@ -17,7 +17,7 @@ try {
                     echo '<div class="card-body">';
                         echo '<h6 class="card-title">' . htmlspecialchars($row['PRODUCTO']) . '</h6>';
                         echo '<p class="card-text limited-text">' . htmlspecialchars($row['DESCRIPCION']) . '</p>';
-                        echo '<h6 class="card-text">' . 'S/' . htmlspecialchars($row['PRECIO']) . '</h6>';
+                        echo '<h6 class="card-text">' . 'S/' . substr(htmlspecialchars($row['PRECIO']), 0, 4) . '</h6>';
                         echo '<a class="btn_add" href="Agregando_Producto.php?ID_PRODUCTO=' . htmlspecialchars($row['ID_PRODUCTO']) . '">Agregar</a>';
                     echo '</div>';
                 echo '</div>';

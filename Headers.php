@@ -41,6 +41,7 @@ session_start();
                                 <div class="dropdown-content">
                                     <?php if ($Usuario): ?>
                                         <a class="btn_inic" href="Perfil_Usuario.php" id="mi_perfil"><i class="fas fa-user"> Mi Perfil</i></a>
+                                        <a class="btn_inic" href="Mis_Compras.php" id="mi_compras"><i class="fa fa-shopping-cart"> Mi Compras</i></a>
                                         <a class="btn_inic" href="Close.php" id="cerrar_sesion"><i class="fas fa-sign-out-alt"> Cerrar Sesión</i></a>
                                     <?php else: ?>
                                         <a class="btn_inic" href="Inicio_Sesion.php"><i class="fas fa-sign-in-alt"> Iniciar Sesión</i></a>

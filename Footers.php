@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="c-trd">
-        <p>© 2024 Tiendas Oxxo, Inc. Todos los derechos reservados.</p>
+        <p>© <?php $FechaActual = new DateTime(); echo $Año = $FechaActual->format('Y') ?> Tiendas Oxxo, Inc. Todos los derechos reservados.</p>
         <p style="color: #cbccce">Creado por Luis</p>
     </div>
 </div>

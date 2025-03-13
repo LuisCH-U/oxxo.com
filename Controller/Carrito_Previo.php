@@ -29,7 +29,7 @@ try {
             //echo '<a href="Carrito_Compras.php" class="c_producto_enlace">';
             echo '<img src="data:image/jpeg;base64,' . base64_encode($row['IMAGEN']) . '">';
             echo '<span class="c_nombre_producto">' . htmlspecialchars($row['PRODUCTO']) . '</span>';
-            echo '<span class="c_precio">' . 'S/' . htmlspecialchars($row['PRECIO']) . '</span>';
+            echo '<span class="c_precio">' . 'S/' . substr(htmlspecialchars($row['PRECIO']), 0, 4) . '</span>';
             echo '<span class="c_cantidad">' . htmlspecialchars($row['CANTIDAD']) . ' Un.' . '</span>';
             echo '<a class="btn" href="Controller/Eliminar_ProductoControllers.php?ID_PRODUCTOS_VENDIDOS=' . htmlspecialchars($row['ID_PRODUCTOS_VENDIDOS']) . '" ><i class="fa fa-trash-alt"></i></a>';
             // '</a>';
@@ -38,7 +38,7 @@ try {
         echo '</div>';
         echo '<div class="cart-total-preview box-row">';
         echo '    <span class="c_label_p">Total: </span>';
-        echo '    <span class="c_precio_p">' . 'S/' . htmlspecialchars($row['TOTAL']) . '</span>';
+        echo '    <span class="c_precio_p">' . 'S/' . substr(htmlspecialchars($row['TOTAL']), 0, 6) . '</span>';
         echo '</div>';
     } else {
         echo '<div class="c_producto_carrito producto justify-content-center">Agrega mas Productos</div>';
