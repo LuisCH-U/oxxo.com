@@ -52,4 +52,4 @@ Correo: luis13chipana@gmail.com
 Linkedin: 
 IG:
 FB:
-Whatsaap:
+Whatsaap: +51
